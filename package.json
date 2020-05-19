@@ -1,0 +1,22 @@
+{
+  "name": "ejercicio1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@adaws/flip-card": "github:dawsonalex/polymer-flip-card",
+    "@manufosela/circle-percent": "github:manufosela/circle-percent",
+    "@polymer/iron-ajax": "^3.0.1",
+    "@polymer/iron-image": "^3.0.2",
+    "@polymer/paper-item": "^3.0.1",
+    "flip-card": "0.0.2",
+    "lit-element": "^2.3.1",
+    "progress-ring-component": "github:taisuke-j/progress-ring-component"
+  },
+  "devDependencies": {}
+}

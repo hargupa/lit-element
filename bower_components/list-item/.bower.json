@@ -1,0 +1,28 @@
+{
+  "name": "list-item",
+  "description": "ES6 Polymer 2 list item with a skeleton loader",
+  "main": "list-item.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
+  },
+  "homepage": "https://github.com/ryanburns23/list-item",
+  "version": "2.0.4",
+  "_release": "2.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.4",
+    "commit": "c0e80dae85b0bea2ee0136839d7f5b4be95dec94"
+  },
+  "_source": "https://github.com/ryanburns23/list-item.git",
+  "_target": "^2.0.4",
+  "_originalSource": "ryanburns23/list-item",
+  "_direct": true
+}

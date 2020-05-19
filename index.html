@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINE-CINEMA</title>
+    <script type="module" src="https://unpkg.com/progress-ring-component/dist/progressring/progressring.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/progress-ring-component/dist/progressring/progressring.js"></script>
+<style>
+
+    .circulo1{
+        position: absolute;
+        left:950px;
+        top:120px;
+    }
+    .circulo2{
+        position: absolute;
+        left:950px;
+        top:360px;
+    }    
+    body { background-image: url("https://image.freepik.com/vector-gratis/cortina-azul-cine-teatro-u-opera_50058-164.jpg");
+           background-size: cover;
+           background-color:rgb(255,0,0);
+            /*opacity:0.6;*/
+    
+    
+     }
+</style>
+</head>
+<body >
+    
+    <script src="./src/index.js" type="module"></script>
+    <main-control onclick="cargar()"></main-control>
+   
+    <div id="cont-circulo1" class="circulo1"></div>
+    <div id="cont-circulo2" class="circulo2"></div>
+    
+    <script>
+        /*Funcion que refresca los controles y los indicadores circulares*/
+        function cargar(){
+            var porcentaje1 = sessionStorage.getItem("porcentaje1");
+            var porcentaje2 = sessionStorage.getItem("porcentaje2");
+            var titulo = sessionStorage.getItem('titulo1');
+            var titulo2 = sessionStorage.getItem('titulo2');
+            if (porcentaje1!=0 && titulo2!=titulo ){
+                    document.getElementById("cont-circulo1").innerHTML="<progress-ring percent='"+porcentaje1+"' ></progress-ring>";
+                    document.getElementById("cont-circulo2").innerHTML="<progress-ring percent='"+porcentaje2+"' ></progress-ring>";
+                    sessionStorage.setItem('titulo2',titulo);
+                }
+        }
+    </script>
+</body>
+</html>
